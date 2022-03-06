@@ -1,6 +1,7 @@
 import pandas as pd
 from requests import post
 import json
+import pickle
 
 data = pd.read_csv("Datasets/dialect_dataset.csv")
 # print(data.info())
@@ -24,5 +25,11 @@ for i in range(0, data.shape[0], 1000):
     text = text.append(d,
                        ignore_index=True)
 
-# save df tweets in csv 
-text.to_csv('Datasets/tweets.csv')
+
+# merge the retrieved data and tweets.    
+tweets = pd.merge(tweets, df, on ='id', how='right')
+    
+# save df tweets  
+fname = 'Datasets/tweets.pkl'
+with open(fname, 'wb') as file:
+    pickle.dump(tweets, file)
