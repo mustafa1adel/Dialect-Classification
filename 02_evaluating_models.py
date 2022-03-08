@@ -27,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(features,
 # print("Testing set has {} samples.".format(X_test.shape[0]))
 
 # modeling a pipeline
-nb = Pipeline([('vect', CountVectorizer()),
+nb = Pipeline([('vect', CountVectorizer(n_gram= (2,2))),
                ('tfidf', TfidfTransformer()),
                ('clf', MultinomialNB()),
               ])
