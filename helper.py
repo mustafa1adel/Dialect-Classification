@@ -1,7 +1,7 @@
 import re
 
 def clean_text(text):
-    special_ch = re.compile('[-\+!~@#$%^&*()={}\[\]:;<.>?/\'"]')
+    special_ch = re.compile('[-\+!~@#$%^_&*()={}\[\]:;<.>?؟/\'"]')
     english_l = re.compile('[a-zA-Z]')
     new_lines = re.compile('\s+')
     numbers = re.compile('[0-9]')
