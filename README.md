@@ -19,13 +19,14 @@ This project requires **Python 3** and the following Python libraries installed:
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [Pickle](https://docs.python.org/3/library/pickle.html)==4.0
 - [Flask](https://flask.palletsprojects.com/)
+- [Keras](https://keras.io/)
 
 **Notice**
 	You may also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html) or install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
 
 ### Code
 
-Template code is provided in the `Dialect_classification.ipynb` notebook file as a whole project and it is divided into 3 python scripts `00_retrieve_data.py`, `01_data_preprocessing.py`, and `02_evaluating_models.py`. You will also find some functions in `helper.py` Python file but unfortunately I didn't provide the datasets here in this repo but you are very welcome to go through the project and check the process.
+Template code is provided in the `Dialect_classification.ipynb` notebook file as a whole project and it is divided into 3 python scripts `00_retrieve_data.py`, `01_data_preprocessing.py`, `02_evaluating_models.py`, and `Dialect_classification_CNN.ipynb`. You will also find some functions in `helper.py` and `helpers.py` Python file but unfortunately I didn't provide the datasets here in this repo but you are very welcome to go through the project and check the process.
 
 ### Run
 
